@@ -11,6 +11,7 @@
 @implementation UIView (Animation)
 
 - (void)sd_fadeIn {
+    //
     CATransition *transition = [CATransition animation];
     transition.duration = .5;
     transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
