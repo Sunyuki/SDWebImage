@@ -66,6 +66,7 @@
                                    weakSelf.image = image;
                                    weakSelf.animatedImage = nil;
                                }
+                               [weakSelf sd_fadeIn];
                            });
                        }
                             progress:progressBlock

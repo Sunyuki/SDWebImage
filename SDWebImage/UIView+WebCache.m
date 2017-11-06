@@ -137,6 +137,7 @@ static char TAG_ACTIVITY_SHOW;
     if ([self isKindOfClass:[UIImageView class]]) {
         UIImageView *imageView = (UIImageView *)self;
         imageView.image = image;
+        [imageView sd_fadeIn];
     }
 #endif
     
@@ -144,6 +145,7 @@ static char TAG_ACTIVITY_SHOW;
     if ([self isKindOfClass:[UIButton class]]) {
         UIButton *button = (UIButton *)self;
         [button setImage:image forState:UIControlStateNormal];
+        [button sd_fadeIn];
     }
 #endif
 }
