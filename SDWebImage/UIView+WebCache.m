@@ -12,6 +12,7 @@
 
 #import "objc/runtime.h"
 #import "UIView+WebCacheOperation.h"
+#import "UIView+Animation.h"
 
 NSString * const SDWebImageInternalSetImageInGlobalQueueKey = @"setImageInGlobalQueue";
 
