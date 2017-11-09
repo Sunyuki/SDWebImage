@@ -14,7 +14,6 @@
 #import "UIView+WebCache.h"
 #import "NSData+ImageContentType.h"
 #import "UIImageView+WebCache.h"
-#import "UIView+Animation.h"
 
 @implementation FLAnimatedImageView (WebCache)
 

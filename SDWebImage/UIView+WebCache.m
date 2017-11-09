@@ -109,6 +109,9 @@ static char TAG_ACTIVITY_SHOW;
             
             dispatch_queue_async_safe(targetQueue, ^{
                 [sself sd_setImage:targetImage imageData:targetData basedOnClassOrViaCustomSetImageBlock:setImageBlock];
+                if (cacheType == SDImageCacheTypeNone) {
+                    [sself sd_fadeIn];
+                }
                 dispatch_main_async_safe(callCompletedBlockClojure);
             });
         }];
